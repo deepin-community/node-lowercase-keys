@@ -1,0 +1,28 @@
+Source: node-lowercase-keys
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Shirish Togarla <shirishtogarla533@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+ , node-tape <!nocheck>
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-lowercase-keys
+Vcs-Git: https://salsa.debian.org/js-team/node-lowercase-keys.git
+Homepage: https://github.com/sindresorhus/lowercase-keys
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-lowercase-keys
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: Lowercase the keys of an object
+ It lowercases the keys and returns a new object.
+ If you pass the keys of an object which are not in lowercase or if you
+ want to ensure that all the keys are in lowercase then you can pass the
+ object as an argument and it returns a new object with all the keys in
+ lowercase.
+ This package is a dependency for ava.
+ .
+ Node.js is an event-based server-side JavaScript engine.
